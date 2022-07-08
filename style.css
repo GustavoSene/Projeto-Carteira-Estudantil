@@ -1,0 +1,214 @@
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 20px;
+    background-image: linear-gradient( to left, rgb(20, 140, 209),rgb(39, 186, 206));
+    height: 1200px;
+}
+
+
+
+h1 {
+    text-align: center;
+    color: rgb(73, 30, 114);
+
+}
+
+
+
+#container {
+    margin: auto;
+    width: calc(80% - 30px);
+    height: 500px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 25px;
+
+
+}
+
+fieldset {
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: rgb(119, 62, 173);
+    color: rgb(73, 30, 114);
+    border: solid 3px;
+    box-shadow: 1px 1px 3px black;
+}
+
+
+.pattern {
+    padding: 5px;
+    margin-bottom: 10px;
+    display: block;
+    width: 96%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(247, 247, 247);
+
+}
+
+#enviar {
+    width: 80px;
+    padding: 5px;
+    color: white;
+    border-radius: 8px;
+    background-color: rgb(73, 30, 114);
+    border-color: rgb(139, 34, 209);
+    position: relative;
+    left: 35%;
+
+}
+
+#ready {
+position: relative;
+top: 50px;
+border: solid 5px black;
+width: 90%;
+height: 500px;
+margin: auto;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+opacity: 0.0;
+}
+
+#card {
+    background-image: linear-gradient( to left, rgb(152, 14, 194),rgb(121, 11, 194)) ;
+    width: calc(45%);
+    height: calc(65%); 
+    margin: 5px; 
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    overflow: hidden;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px black;
+
+
+}
+
+h2 {
+
+text-align: center;
+
+}
+
+.patternNames{ 
+    padding-left: 20px;
+    margin-left: -15px;
+    padding-right: 10px;
+    background-color: rgb(255, 255, 255);
+    max-width: fit-content;
+    color: rgb(73, 30, 114);
+    border-radius: 15px;
+
+
+}
+
+.patterncard {
+    margin-bottom: 5px;
+    border-radius: 10px;
+    max-width: fit-content;
+    padding: 5px;
+
+
+}
+
+#matricula {
+    display: inline-block;
+    position: relative;
+    left: calc(70% - 100px);
+    top: -240px;
+
+
+}
+
+#nc {
+    display: inline-block;
+    position: relative;
+    top: -250px;
+    left: calc(50% - 100px);
+
+}
+
+#numeroCampo {
+    max-width: fit-content;
+
+}
+
+#matriculaCampo {
+max-width: fit-content;
+
+
+}
+
+.pronto {
+width: fit-content;
+position: absolute;
+top: 0;
+left: calc(50% - 180px);
+
+}
+
+@media screen and (max-width: 1000px) {
+
+   #card {
+    width: calc(65%);
+    height: calc(65%); 
+    margin: 5px; 
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    color: white;
+    /*color: red;*/
+
+   }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    #card {
+     width: calc(75%);
+     height: calc(65%); 
+     margin: 5px; 
+     display: flex;
+     flex-direction: column;
+     align-content: flex-start;
+     color: white;
+     /*color: red;*/
+ 
+    }
+ 
+ }
+
+ @media screen and (max-width: 700px) {
+
+    #card {
+     width: calc(95%);
+     height: calc(65%); 
+     margin: 5px; 
+     display: flex;
+     flex-direction: column;
+     align-content: flex-start;
+ 
+    }
+ 
+ }
+
+ @keyframes aparecer {
+
+    from {opacity: 0.0;}
+    to {opacity: 1.0;}
+
+
+ }
